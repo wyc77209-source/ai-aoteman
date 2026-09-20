@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>状态 · AI 奥特曼</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="logo">奥</span>AI 奥特曼</a>
+      <div class="navlinks">
+        <a href="index.html">首页</a>
+        <a class="active" href="status.html">状态</a>
+        <a href="acceptance.html">验收清单</a>
+        <a href="https://chatgpt.com/codex/cloud" rel="noopener" target="_blank">Codex Cloud</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">只读盘点 · 不创建任务</div>
+      <h1>Codex / 环境 / 仓现状</h1>
+      <p class="lead">
+        下列数字与结论摘自 <span class="mono">STATUS.md</span>、<span class="mono">PLAYBOOK.md</span>、<span class="mono">ERRORS.md</span>、<span class="mono">REPOS.md</span>
+        （最近 Cloud 只读复核约 <strong>2026-09-18 08:40 ET</strong>；公网/本地健康复测 <strong>2026-09-18 08:40 ET</strong> 全页 200；文档盘点仍参考 09-01）。本页不实时拉账号；醒来后请到 Codex Cloud 再核一眼。
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="https://tangy-plums-call.loca.lt/" rel="noopener" target="_blank">公网运营台</a>
+        <a class="btn" href="https://chatgpt.com/codex/cloud" rel="noopener" target="_blank">打开 Codex Cloud</a>
+        <a class="btn" href="https://chatgpt.com/codex/cloud/settings/environments" rel="noopener" target="_blank">Environments</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <span class="badge ok">登录</span>
+        <h2>Codex Cloud</h2>
+        <ul>
+          <li>logged_in: true（TE PRO；08:40 ET 屏显）</li>
+          <li>入口：chatgpt.com/codex/cloud</li>
+          <li>不要擅自登出</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="badge warn">空</span>
+        <h2>Tasks / Archive</h2>
+        <ul>
+          <li>Tasks: <strong>0</strong></li>
+          <li>Archive: <strong>0</strong></li>
+          <li>无报错/额度横幅（08:40 ET）；可见 Try in terminal/IDE；Create environment 未点</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="badge warn">空</span>
+        <h2>Environments</h2>
+        <ul>
+          <li>Environments: <strong>0</strong>（No environments）</li>
+          <li>主仓未点名前禁止 Create environment</li>
+          <li>Code review：未启用（不要替用户点 Enable）</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="badge fail">禁用选中</span>
+        <h2>当前选中仓</h2>
+        <ul>
+          <li><span class="mono">wyc77209-source/valent</span> @ main</li>
+          <li>valent = Oasis —— <strong>本线禁用</strong></li>
+          <li>GitHub 已连 wyc77209-source</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Analytics（文档快照 05:46 ET）</h2>
+      <div class="card">
+        <table>
+          <thead><tr><th>窗口</th><th>剩余</th><th>备注</th></tr></thead>
+          <tbody>
+            <tr><td>5 hour</td><td>44% remaining</td><td>当时 Resets 4:35 AM；Cloud 第一单走 Sol，更吃额度</td></tr>
+            <tr><td>weekly</td><td>45% remaining</td><td>当时 Resets Sep 6, 2026 8:31 PM</td></tr>
+            <tr><td>credits</td><td>0</td><td>不要夜里买额度</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:12px">开第一单前再看 Settings &gt; Analytics。本机省额度用 Terra/Luna；Cloud 默认模型当时文档写明改不了。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>已连接 8 仓（都不是奥特曼主仓）</h2>
+      <div class="note">公开页事实见 <span class="mono">REPOS.md</span>。主仓仍未指定。禁止从这 8 个里猜；禁止默认 valent。</div>
+      <div class="card">
+        <table>
+          <thead><tr><th>仓</th><th>公开页实际是什么</th><th>本线建议</th></tr></thead>
+          <tbody>
+            <tr><td>valent</td><td>Oasis</td><td class="mono">禁用 · 不开任务</td></tr>
+            <tr><td>valent1</td><td>Oasis 同线</td><td>不推</td></tr>
+            <tr><td>new-api / one-api</td><td>LLM 中转/分发</td><td>像 Oasis，不推</td></tr>
+            <tr><td>gold-digger</td><td>投资电台；README 曾含明文 Gemini key</td><td>醒后轮换 key；不当主仓</td></tr>
+            <tr><td>xiamen-player</td><td>洪英士歌词播放器</td><td>不推</td></tr>
+            <tr><td>awesome-harness-engineering</td><td>agent harness awesome list</td><td>可参考，不当主仓</td></tr>
+            <tr><td>cwc-workshops</td><td>Claude 工作坊材料</td><td>不推</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>已知错误（摘要）</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="badge warn">本地 CLI</span>
+          <h3>401 invalid_api_key</h3>
+          <p>2026-06-10 对话「Codex API Key 问题」：本地 Codex <span class="mono">401 Unauthorized: invalid_api_key</span>，用户未确认已修好。Plus 应走 ChatGPT 登录，不要继续塞 API key。本机夜里修不了别人电脑。</p>
+        </article>
+        <article class="card">
+          <span class="badge neutral">Cloud</span>
+          <h3>无环境 ≠ 报错</h3>
+          <p>Cloud 侧 0 环境 / 0 任务不是工具坏了，是「主仓未指定 + 无工作项」的结果。阻塞在决策，不在登录。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>候选第一单（未提交）</h2>
+      <div class="card">
+        <p>标题草稿：<span class="mono">ai-aoteman-codex-bootstrap</span> · 仓：<span class="mono">REPO_PLACEHOLDER</span></p>
+        <ul>
+          <li>粘贴稿在仓库根 <span class="mono">FIRST_TASK.md</span>；空仓模板在 <span class="mono">templates/</span>。</li>
+          <li>主仓确认前 <strong>禁止</strong>在 Codex Cloud 点创建。</li>
+          <li>产出预期：环境说明 + AGENTS.md + 可选 setup；不是业务功能。</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      更新依据文档快照；若与当前浏览器不一致，以 Codex Cloud 页面为准。
+    </footer>
+  </main>
+</body>
+</html>

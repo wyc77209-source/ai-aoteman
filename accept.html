@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>验收清单 · AI 奥特曼</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="logo">奥</span>AI 奥特曼</a>
+      <div class="navlinks">
+        <a href="index.html">首页</a>
+        <a href="status.html">状态</a>
+        <a class="active" href="acceptance.html">验收清单</a>
+        <a href="https://chatgpt.com/codex/cloud" rel="noopener" target="_blank">Codex Cloud</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">验收 / 上线</div>
+      <h1>本批交付验收清单</h1>
+      <p class="lead">
+        针对 2026-09-18 夜班可上线交付：静态运营台 + ACCEPTANCE.md + SHIP.md。
+        Codex 第一单与环境创建仍属「用户点头后」事项，此处标为阻塞，不算本批失败。
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>本批必须通过</h2>
+      <div class="card">
+        <ul class="check">
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS</span>
+            <span>公网可打开：<a href="https://tangy-plums-call.loca.lt/" rel="noopener" target="_blank"><span class="mono">https://tangy-plums-call.loca.lt/</span></a>（localtunnel→本机 :8080；若遇提醒页点 Continue）。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span><span class="mono">site/index.html</span> 存在，中文首页说明 Auto Cloud = Codex Cloud + 豪车协同。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span><span class="mono">site/status.html</span> 反映文档事实：登录、Tasks 0、Environments 0、valent 禁用、8 仓非主仓。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span><span class="mono">site/acceptance.html</span> 可勾本清单；含 Codex Cloud 外链。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span>豪车区只列已知对话链接与「已知未知」，不发明公司名/库存。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span>在 <span class="mono">site/</span> 执行 <span class="mono">python3 -m http.server 8080</span> 可打开首页。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span>根目录有 <span class="mono">ACCEPTANCE.md</span> 与 <span class="mono">SHIP.md</span>；无 API key。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--pass)">PASS 条件</span>
+            <span>未碰短剧脚本、摘星交易、Oasis/valent 产品代码；未开 Codex 任务；未点付费升级。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>仍阻塞（不算本站失败）</h2>
+      <div class="card">
+        <ul class="check">
+          <li>
+            <span class="mark" style="color:var(--warn)">BLOCKED</span>
+            <span>奥特曼主仓未指定（不能默认 valent；不能从已连 8 仓猜）。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--warn)">BLOCKED</span>
+            <span>Environments = 0；Create environment 等用户点头。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--warn)">BLOCKED</span>
+            <span>候选第一单 <span class="mono">ai-aoteman-codex-bootstrap</span> 未提交（见 FIRST_TASK.md）。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--warn)">BLOCKED</span>
+            <span>本机 gh 未登录时：GitHub Pages 公网 URL 可能暂无；以本地 demo 或醒后 push 为准（见 SHIP.md）。</span>
+          </li>
+          <li>
+            <span class="mark" style="color:var(--warn)">BLOCKED</span>
+            <span>本地 Codex CLI 401（2026-06-10）仍未核实；需用户本机重登 ChatGPT。</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Demo 步骤（本地）</h2>
+      <div class="card">
+        <ol>
+          <li><span class="mono">cd /workspace/ai-aoteman/site</span></li>
+          <li><span class="mono">python3 -m http.server 8080</span></li>
+          <li>浏览器打开 <span class="mono">http://127.0.0.1:8080/</span></li>
+          <li>点「状态」「验收清单」；点外链进 Codex Cloud（需已登录会话）。</li>
+          <li>对照本页 PASS 条件逐条确认。</li>
+        </ol>
+      </div>
+    </section>
+
+    <footer class="footer">
+      完整文字版见仓库根 <span class="mono">ACCEPTANCE.md</span>。
+    </footer>
+  </main>
+</body>
+</html>
