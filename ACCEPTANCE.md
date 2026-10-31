@@ -22,7 +22,7 @@
 3. **状态页有事实**：Tasks 0、Archive 0、Environments 0、logged_in TE/Plus、选中 `valent@main` 且标注禁用、已连 8 仓非奥特曼主仓——与 `STATUS.md` / `PLAYBOOK.md` / `REPOS.md` 一致（文档快照约 2026-09-01 05:46 ET）。
 4. **验收页可勾**：列出本批 PASS 与仍 BLOCKED 项；含 `https://chatgpt.com/codex/cloud` 链接。
 5. **豪车不编造**：只链已知对话（兰博基尼方案 / 甜蜜与苦涩 / ETH GT3 RS）；写明公司名、形态、库存为已知未知；不发明公司 SOP。
-6. **公网可开**（夜班）：`https://ai-aoteman-ops.loca.lt/`（localtunnel；提醒页点 Continue）。
+6. **公网可开**：`https://wyc77209-source.github.io/ai-aoteman/`（GitHub Pages）。
 7. **本地可跑**：
    ```bash
    cd /workspace/ai-aoteman/site
@@ -43,12 +43,12 @@
 ## 不算本批失败的阻塞
 
 - 主仓未指定 → 不能 Create environment / 不能提交 `ai-aoteman-codex-bootstrap`。
-- `gh` 未登录 → 无 GitHub Pages；夜班用 localtunnel 公网 URL 顶上（见 SHIP.md / LIVE_URL.txt）。
+- GitHub Pages 已上线：`https://wyc77209-source.github.io/ai-aoteman/`；原 localtunnel 夜班临时域名已失效（见 SHIP.md / LIVE_URL.txt）。
 - 本地 Codex CLI `401 invalid_api_key`（2026-06-10）未核实。
 
 ## Demo 步骤（验收人）
 
-1. 公网：打开 `https://ai-aoteman-ops.loca.lt/`（遇 loca.lt 提醒点 Continue）。
+1. 公网：打开 `https://wyc77209-source.github.io/ai-aoteman/`。
 2. 或本地：`cd /workspace/ai-aoteman/site && python3 -m http.server 8080` → `http://127.0.0.1:8080/`。
 3. 打开「状态」→ 核对 Tasks/Environments/valent 禁用。
 4. 打开「验收清单」→ 对照本文件 Pass 标准。
